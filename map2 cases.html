@@ -103,10 +103,11 @@
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 3,
             minZoom: 3,
-            center: [-98, 38] // US center
+            center: [-98, 38], // US center
+            projection: 'albers'
         });
 
-        // define case grades, colors, radii
+        // define case grades, colors, radius
         const grades = [1000, 5000, 10000, 50000]; 
         const colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)', 'rgb(0,68,27)'];
         const radii = [5, 10, 15, 20];
